@@ -1,5 +1,5 @@
 {
-    "serverMaxRevisionCounter": 60,
+    "serverMaxRevisionCounter": 140,
     "sourceMembers": {
         "CustomTab__Bingo": {
             "serverRevisionCounter": 32,
@@ -38,8 +38,8 @@
             "isNameObsolete": false
         },
         "LightningComponentBundle__bingoCard": {
-            "serverRevisionCounter": 56,
-            "lastRetrievedFromServer": 56,
+            "serverRevisionCounter": 136,
+            "lastRetrievedFromServer": 136,
             "memberType": "LightningComponentBundle",
             "isNameObsolete": false
         },
@@ -56,25 +56,25 @@
             "isNameObsolete": false
         },
         "LightningComponentResource__bingoCard/bingoCard.html": {
-            "serverRevisionCounter": 57,
+            "serverRevisionCounter": 137,
             "lastRetrievedFromServer": 57,
             "memberType": "LightningComponentResource",
             "isNameObsolete": false
         },
         "LightningComponentResource__bingoCard/bingoCard.css": {
-            "serverRevisionCounter": 58,
+            "serverRevisionCounter": 138,
             "lastRetrievedFromServer": 58,
             "memberType": "LightningComponentResource",
             "isNameObsolete": false
         },
         "LightningComponentResource__bingoCard/bingoCard.js": {
-            "serverRevisionCounter": 59,
+            "serverRevisionCounter": 139,
             "lastRetrievedFromServer": 59,
             "memberType": "LightningComponentResource",
             "isNameObsolete": false
         },
         "LightningComponentResource__bingoCard/bingoCard.js-meta.xml": {
-            "serverRevisionCounter": 60,
+            "serverRevisionCounter": 140,
             "lastRetrievedFromServer": 60,
             "memberType": "LightningComponentResource",
             "isNameObsolete": false
