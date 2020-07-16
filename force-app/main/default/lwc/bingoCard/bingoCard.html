@@ -2,7 +2,7 @@
   @description       : 
   @author            : Jayaprakash Thatiparthi
   @group             : 
-  @last modified on  : 07-15-2020
+  @last modified on  : 07-16-2020
   @last modified by  : Jayaprakash Thatiparthi
   Modifications Log 
   Ver   Date         Author                    Modification
@@ -11,8 +11,8 @@
 <template>
 	<lightning-card>
 		<p class="slds-align_absolute-center"><lightning-badge label={label} class="slds-text-heading_large"></lightning-badge></p>
-		<lightning-button label="Fill Data" onclick={fillData} slot="actions"></lightning-button>
-		<lightning-button label="Start Game" onclick={startGame} slot="actions"></lightning-button>
+		<lightning-button class="button" label="Fill Data" onclick={fillData} slot="actions"></lightning-button>
+		<lightning-button class="button" label="Start Game" onclick={startGame} slot="actions"></lightning-button>
 		<p slot="footer"><lightning-badge label={footerLabel} class="slds-text-heading_large"></lightning-badge></p>
 		<c-card currentcard={currentcard}></c-card>
 	</lightning-card>
