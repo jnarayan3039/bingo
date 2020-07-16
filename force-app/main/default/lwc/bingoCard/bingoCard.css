@@ -57,3 +57,6 @@ body {
   .cellBackground{
     background: #a5b659;
   }
+  .button{
+    text-align: center;
+  }
