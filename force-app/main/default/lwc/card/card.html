@@ -1,0 +1,32 @@
+<!--
+  @description       : 
+  @author            : Jayaprakash Thatiparthi
+  @group             : 
+  @last modified on  : 07-15-2020
+  @last modified by  : Jayaprakash Thatiparthi
+  Modifications Log 
+  Ver   Date         Author                    Modification
+  1.0   07-15-2020   Jayaprakash Thatiparthi   Initial Version
+-->
+<template>
+    <div class="slds-p-horizontal_small">
+        <table class="bingotable">
+            <tr>
+                <th class="orange">B</th>
+                <th class="orange">I</th>
+                <th class="orange">N</th>
+                <th class="orange">G</th>
+                <th class="orange">O</th>
+            </tr>
+            <template for:each={rows} for:item="row">
+                <tr key={row}>
+                    <template for:each={rows} for:item="number">
+                        <td key={number} class="cellBackground">
+                            <lightning-button variant="base" label={value} title="Looks like a link" onclick={handleClick} class="slds-m-left_x-small square"></lightning-button>
+                        </td>
+                    </template>
+                </tr>
+            </template>
+        </table>
+    </div>
+</template>
