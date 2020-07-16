@@ -291,10 +291,10 @@
         "state": "u",
         "isDirectory": false,
         "isMetadataFile": false,
-        "size": 2234,
-        "modifiedTime": 1594936839677,
-        "changeTime": 1594936839677,
-        "contentHash": "602a9af5c4542a30df60a52c171677de1728231f"
+        "size": 2184,
+        "modifiedTime": 1594941646124,
+        "changeTime": 1594941646124,
+        "contentHash": "b0316b32127e198629e327a0d05f735f6b381c06"
     },
     "/Users/jnarayan/Desktop/Sample Gallery/bingo/force-app/main/default/lwc/bingoCard/bingoCard.js-meta.xml": {
         "sourcePath": "/Users/jnarayan/Desktop/Sample Gallery/bingo/force-app/main/default/lwc/bingoCard/bingoCard.js-meta.xml",

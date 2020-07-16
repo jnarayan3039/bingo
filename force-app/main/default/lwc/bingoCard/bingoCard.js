@@ -9,16 +9,16 @@
  * 1.0   07-12-2020   Jayaprakash Thatiparthi   Initial Version
 **/
 import { LightningElement,track } from 'lwc';
-//import max from '@salesforce/label/Bingo_End_Range';
-//import delay from '@salesforce/label/Bingo_Delay_Time';
-//import cardscount from '@salesforce/label/Bingo_Cards_Per_Game';
+import max from '@salesforce/label/c.Bingo_End_Range';
+import delay from '@salesforce/label/c.Bingo_Delay_Time';
+import cardscount from '@salesforce/label/c.Bingo_Cards_Per_Game';
 
 export default class BingoCard extends LightningElement {
-// label = {
-// 	max,
-// 	delay,
-// 	cardscount
-// };
+label = {
+ 	max,
+ 	delay,
+ 	cardscount
+};
 displayedCards = [];
 rowSet1 = [0,1,2,3,4];
 rowset2 = [5,6,7,8,9];
@@ -29,7 +29,8 @@ rowset5 = [20,21,22,23,24];
  @track currentcard=0;
  @track cardsleft = 0;
  label=`${this.currentcard}`;
- footerLabel = `cards left: ${this.cardsleft}`
+ footerLabel = `cards left: ${this.cardsleft}`;
+ 
 handleClick(event){
 
 }
@@ -40,11 +41,10 @@ fillData(){
 }
 
 startGame(){
-	console.log("inside start game");
-	var count = 35;;
-	var max = 100;//this.label.max;
-	var delay = 10000;//this.label.delay;
+	var count = cardscount;
 	var parentThis = this;
+	var milliSecondsToWait = delay;
+	//this.displayedCards = [];
 	parentThis.cardsleft = count;//this.label.cardscount;
 	parentThis.currentcard = this.getRandomInt(max);
 	let buttons=this.template.querySelectorAll(".button");
@@ -58,18 +58,18 @@ startGame(){
 			parentThis.displayedCards.push(displayedCard);
 			parentThis.cardsleft--;
 			parentThis.footerLabel = `cards left: ${parentThis.cardsleft}`
-			console.log('cardsleft'+parentThis.cardsleft);
 			count--;
 			parentThis.label=`${parentThis.currentcard}`;
-			parentThis.milliSecondsToWait=delay;
+			milliSecondsToWait=delay;
 		}else{
-			parentThis.milliSecondsToWait=1;
+			milliSecondsToWait=1;
 		}
 		if(count===0){
 			console.log('Displayed Cards;'+parentThis.displayedCards);
 			clearInterval(parentThis.timeIntervalInstance);
 		}
-	},delay);
+		console.log('milliSecondsToWait'+milliSecondsToWait);
+	},milliSecondsToWait);
 }
 
 
