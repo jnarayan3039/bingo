@@ -1,5 +1,5 @@
 {
-    "serverMaxRevisionCounter": 140,
+    "serverMaxRevisionCounter": 415,
     "sourceMembers": {
         "CustomTab__Bingo": {
             "serverRevisionCounter": 32,
@@ -38,14 +38,14 @@
             "isNameObsolete": false
         },
         "LightningComponentBundle__bingoCard": {
-            "serverRevisionCounter": 136,
-            "lastRetrievedFromServer": 136,
+            "serverRevisionCounter": 406,
+            "lastRetrievedFromServer": 406,
             "memberType": "LightningComponentBundle",
             "isNameObsolete": false
         },
         "LightningComponentBundle__card": {
-            "serverRevisionCounter": 9,
-            "lastRetrievedFromServer": 9,
+            "serverRevisionCounter": 322,
+            "lastRetrievedFromServer": 322,
             "memberType": "LightningComponentBundle",
             "isNameObsolete": false
         },
@@ -56,26 +56,26 @@
             "isNameObsolete": false
         },
         "LightningComponentResource__bingoCard/bingoCard.html": {
-            "serverRevisionCounter": 137,
-            "lastRetrievedFromServer": 57,
+            "serverRevisionCounter": 407,
+            "lastRetrievedFromServer": 407,
             "memberType": "LightningComponentResource",
             "isNameObsolete": false
         },
         "LightningComponentResource__bingoCard/bingoCard.css": {
-            "serverRevisionCounter": 138,
-            "lastRetrievedFromServer": 58,
+            "serverRevisionCounter": 408,
+            "lastRetrievedFromServer": 408,
             "memberType": "LightningComponentResource",
             "isNameObsolete": false
         },
         "LightningComponentResource__bingoCard/bingoCard.js": {
-            "serverRevisionCounter": 139,
-            "lastRetrievedFromServer": 59,
+            "serverRevisionCounter": 409,
+            "lastRetrievedFromServer": 409,
             "memberType": "LightningComponentResource",
             "isNameObsolete": false
         },
         "LightningComponentResource__bingoCard/bingoCard.js-meta.xml": {
-            "serverRevisionCounter": 140,
-            "lastRetrievedFromServer": 60,
+            "serverRevisionCounter": 410,
+            "lastRetrievedFromServer": 410,
             "memberType": "LightningComponentResource",
             "isNameObsolete": false
         },
@@ -98,44 +98,44 @@
             "isNameObsolete": false
         },
         "LightningComponentResource__card/card.js-meta.xml": {
-            "serverRevisionCounter": 10,
-            "lastRetrievedFromServer": 10,
+            "serverRevisionCounter": 323,
+            "lastRetrievedFromServer": 323,
             "memberType": "LightningComponentResource",
             "isNameObsolete": false
         },
         "LightningComponentResource__card/card.html": {
-            "serverRevisionCounter": 11,
-            "lastRetrievedFromServer": 11,
+            "serverRevisionCounter": 324,
+            "lastRetrievedFromServer": 324,
             "memberType": "LightningComponentResource",
             "isNameObsolete": false
         },
         "LightningComponentResource__card/card.css": {
-            "serverRevisionCounter": 12,
-            "lastRetrievedFromServer": 12,
+            "serverRevisionCounter": 325,
+            "lastRetrievedFromServer": 325,
             "memberType": "LightningComponentResource",
             "isNameObsolete": false
         },
         "LightningComponentResource__card/card.js": {
-            "serverRevisionCounter": 13,
-            "lastRetrievedFromServer": 13,
+            "serverRevisionCounter": 326,
+            "lastRetrievedFromServer": 326,
             "memberType": "LightningComponentResource",
             "isNameObsolete": false
         },
         "CustomLabel__Bingo_Cards_Per_Game": {
-            "serverRevisionCounter": 1,
-            "lastRetrievedFromServer": 1,
+            "serverRevisionCounter": 415,
+            "lastRetrievedFromServer": 415,
             "memberType": "CustomLabel",
             "isNameObsolete": false
         },
         "CustomLabel__Bingo_Delay_Time": {
-            "serverRevisionCounter": 2,
-            "lastRetrievedFromServer": 2,
+            "serverRevisionCounter": 414,
+            "lastRetrievedFromServer": 414,
             "memberType": "CustomLabel",
             "isNameObsolete": false
         },
         "CustomLabel__Bingo_End_Range": {
-            "serverRevisionCounter": 3,
-            "lastRetrievedFromServer": 3,
+            "serverRevisionCounter": 411,
+            "lastRetrievedFromServer": 411,
             "memberType": "CustomLabel",
             "isNameObsolete": false
         },
@@ -143,6 +143,12 @@
             "serverRevisionCounter": 29,
             "lastRetrievedFromServer": 29,
             "memberType": "Profile",
+            "isNameObsolete": false
+        },
+        "CustomLabel__Bingo_Delay_Time_Mismatch": {
+            "serverRevisionCounter": 413,
+            "lastRetrievedFromServer": 413,
+            "memberType": "CustomLabel",
             "isNameObsolete": false
         }
     }

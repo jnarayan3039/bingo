@@ -15,6 +15,13 @@
         <value>10000</value>
     </labels>
     <labels>
+        <fullName>Bingo_Delay_Time_Mismatch</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Bingo_Delay_Time_Mismatch</shortDescription>
+        <value>1000</value>
+    </labels>
+    <labels>
         <fullName>Bingo_End_Range</fullName>
         <language>en_US</language>
         <protected>true</protected>
