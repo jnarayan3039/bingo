@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Bingo_Cards_Per_Game</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Bingo_Cards_Per_Game</shortDescription>
+        <value>35</value>
+    </labels>
+    <labels>
+        <fullName>Bingo_Delay_Time</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Bingo_Delay_Time</shortDescription>
+        <value>10000</value>
+    </labels>
+    <labels>
+        <fullName>Bingo_Delay_Time_Mismatch</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Bingo_Delay_Time_Mismatch</shortDescription>
+        <value>1000</value>
+    </labels>
+    <labels>
+        <fullName>Bingo_End_Range</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Bingo_End_Range</shortDescription>
+        <value>100</value>
+    </labels>
+</CustomLabels>

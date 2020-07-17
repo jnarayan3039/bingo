@@ -1,0 +1,22 @@
+{
+    "CustomLabels__Bingo_Cards_Per_Game": {
+        "fullName": "Bingo_Cards_Per_Game",
+        "type": "CustomLabels",
+        "metadataFilePath": "/Users/jnarayan/Desktop/Sample Gallery/bingo/force-app/main/default/labels/CustomLabels.labels-meta.xml"
+    },
+    "CustomLabels__Bingo_Delay_Time": {
+        "fullName": "Bingo_Delay_Time",
+        "type": "CustomLabels",
+        "metadataFilePath": "/Users/jnarayan/Desktop/Sample Gallery/bingo/force-app/main/default/labels/CustomLabels.labels-meta.xml"
+    },
+    "CustomLabels__Bingo_Delay_Time_Mismatch": {
+        "fullName": "Bingo_Delay_Time_Mismatch",
+        "type": "CustomLabels",
+        "metadataFilePath": "/Users/jnarayan/Desktop/Sample Gallery/bingo/force-app/main/default/labels/CustomLabels.labels-meta.xml"
+    },
+    "CustomLabels__Bingo_End_Range": {
+        "fullName": "Bingo_End_Range",
+        "type": "CustomLabels",
+        "metadataFilePath": "/Users/jnarayan/Desktop/Sample Gallery/bingo/force-app/main/default/labels/CustomLabels.labels-meta.xml"
+    }
+}

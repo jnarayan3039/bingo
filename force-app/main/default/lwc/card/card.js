@@ -2,46 +2,96 @@
  * @description       : 
  * @author            : Jayaprakash Thatiparthi
  * @group             : 
- * @last modified on  : 07-16-2020
+ * @last modified on  : 07-17-2020
  * @last modified by  : Jayaprakash Thatiparthi
  * Modifications Log 
  * Ver   Date         Author                    Modification
  * 1.0   07-15-2020   Jayaprakash Thatiparthi   Initial Version
 **/
 import { LightningElement,api,track } from 'lwc';
-const MAX=100;
+import { ShowToastEvent } from 'lightning/platformShowToastEvent';
+import max from '@salesforce/label/c.Bingo_End_Range';
 export default class Card extends LightningElement {
 @api currentcard;
 usedNums = [];
 rows = [1,2,3,4,5];
-value=this.getRandomInt(MAX);
-
+value=this.getRandomInt(max);
+selectedValues = [];
 @api fillData(){
     this.usedNums=[];
     let matchedValues = this.template.querySelectorAll(".square");
-    console.log('Matched Values:'+matchedValues.length);
-    for(var i=0;i<matchedValues.length;i++){
-        console.log(matchedValues[i].label);
-       
-        var newNum = this.getRandomInt(MAX);
-        if(this.usedNums.includes(newNum)){
-            i--;
-            continue;
-        }else{
-            matchedValues[i].label = newNum;
-            matchedValues[i].iconName='';
-            this.usedNums.push(newNum);
+    let matrixRow = Math.sqrt(matchedValues.length);
+    for(var i=0;i<matrixRow;i++){
+        var jIndex =(i*matrixRow);
+        for(var j=0;j<matrixRow;j++){
+            var newNum = this.getRandomInt(max);
+            if(this.usedNums.includes(newNum)){
+                j--;
+                continue;
+            }else{
+                matchedValues[j+jIndex].label = newNum;
+                matchedValues[j+jIndex].iconName='';
+                matchedValues[j+jIndex].index = i+''+j;
+                console.log("index:"+matchedValues[j+jIndex].index);
+                this.usedNums.push(newNum);
+            }
         }
     }
-    
 }
 
 handleClick(event){
     console.log(event.target.label);
-    if(this.currentcard == event.target.label){
+    if(this.currentcard === event.target.label){
         event.target.iconName = 'action:approval';
+        var index = event.target.index;
+        console.log('Index:'+index);
+        this.selectedValues.push(index);
+        this.checkBingo(index);
     }else{
     }
+}
+
+checkBingo(currentCell){
+    let rowNumber = currentCell[0];
+    let columnNumber = currentCell[1];
+    console.log('Selected Values:'+this.selectedValues);
+   this.checkRowBingo(rowNumber, this.selectedValues).length===5 ? this.handleRowMessage(rowNumber):'';
+   this.checkColumnBingo(columnNumber, this.selectedValues).length===5 ? this.handleColMessage(columnNumber):'';
+}
+
+checkRowBingo(rowNum, matchedValues){
+    return matchedValues.filter(row => row.startsWith(rowNum+''));
+}
+
+checkColumnBingo(columnNumber, matchedValues){
+    return matchedValues.filter(col => col.endsWith(columnNumber+''));
+}
+
+handleRowMessage(index){
+    var rowNumber = index+1;
+    console.log('Row '+ rowNumber +'Housie');
+    
+    const event = new ShowToastEvent({
+        title: 'Bingo Row Housie',
+        message: 'Row '+ rowNumber +' Housie',
+        variant: 'success',
+        mode: 'dismissable'
+    });
+    this.dispatchEvent(event);
+    
+}
+handleColMessage(index){
+    colNumber = index+1;
+    console.log('Column '+ colNumber +'Housie');
+    
+    const event = new ShowToastEvent({
+        title: 'Bingo Column Housie',
+        message: 'Column '+ colNumber +' Housie',
+        variant: 'success',
+        mode: 'dismissable'
+    });
+    this.dispatchEvent(event);
+    
 }
 
 getRandomInt(max) {

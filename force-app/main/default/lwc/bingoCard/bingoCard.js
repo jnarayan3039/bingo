@@ -2,29 +2,28 @@
  * @description       : 
  * @author            : Jayaprakash Thatiparthi
  * @group             : 
- * @last modified on  : 07-15-2020
+ * @last modified on  : 07-17-2020
  * @last modified by  : Jayaprakash Thatiparthi
  * Modifications Log 
  * Ver   Date         Author                    Modification
  * 1.0   07-12-2020   Jayaprakash Thatiparthi   Initial Version
 **/
 import { LightningElement,track } from 'lwc';
-
-const MAX=100;
+import max from '@salesforce/label/c.Bingo_End_Range';
+import delay from '@salesforce/label/c.Bingo_Delay_Time';
+import delayMisMatch from '@salesforce/label/c.Bingo_Delay_Time_Mismatch';
+import cardscount from '@salesforce/label/c.Bingo_Cards_Per_Game';
 
 export default class BingoCard extends LightningElement {
+//maximum=25;
+
 displayedCards = [];
-rowSet1 = [0,1,2,3,4];
-rowset2 = [5,6,7,8,9];
-rowset3 = [10,11,12,13,14];
-rowset4 = [15,16,17,18,19];
-rowset5 = [20,21,22,23,24];
  timeIntervalInstance;
- milliSecondsToWait = 5000;
  @track currentcard=0;
  @track cardsleft = 0;
  label=`${this.currentcard}`;
- footerLabel = `cards left: ${this.cardsleft}`
+ footerLabel = `cards left: ${this.cardsleft}`;
+ 
 handleClick(event){
 
 }
@@ -35,30 +34,39 @@ fillData(){
 }
 
 startGame(){
-	console.log("inside start game");
-	var count = 35;
+	var count = cardscount;
 	var parentThis = this;
-	parentThis.cardsleft = count;
-	parentThis.currentcard = this.getRandomInt(MAX);
+	var milliSecondsToWait = delay;
+	parentThis.cardsleft = count;//this.label.cardscount;
+	parentThis.currentcard = this.getRandomInt(max);
+	let buttons=this.template.querySelectorAll(".button");
+	for(var i=0;i<buttons.length;i++){
+		buttons[i].disabled=true;
+	}
 	this.timeIntervalInstance = setInterval(function(){
-		var displayedCard = parentThis.getRandomInt(MAX);
+		var displayedCard = parentThis.getRandomInt(max);
 		if(!(parentThis.displayedCards.includes(displayedCard))){
 			parentThis.currentcard = displayedCard;
 			parentThis.displayedCards.push(displayedCard);
 			parentThis.cardsleft--;
 			parentThis.footerLabel = `cards left: ${parentThis.cardsleft}`
-			console.log('cardsleft'+parentThis.cardsleft);
 			count--;
 			parentThis.label=`${parentThis.currentcard}`;
-			parentThis.milliSecondsToWait=5000;
+			milliSecondsToWait=delay;
 		}else{
-			parentThis.milliSecondsToWait=1;
+			milliSecondsToWait=delayMisMatch;
 		}
 		if(count===0){
-			console.log('Displayed Cards;'+parentThis.displayedCards);
 			clearInterval(parentThis.timeIntervalInstance);
+			console.log('Displayed Cards;'+parentThis.displayedCards);
+			//var eButtons=this.template.querySelectorAll(".button");
+			console.log("Buttons to Enable:"+buttons.length);
+			for(var j=0;j<buttons.length;j++){
+				buttons[j].disabled=false;
+			}
 		}
-	},parentThis.milliSecondsToWait);
+	},milliSecondsToWait);
+	
 }
 
 
@@ -67,3 +75,4 @@ getRandomInt(max) {
 }
 
 }
+
