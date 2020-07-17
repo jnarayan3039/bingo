@@ -2,7 +2,7 @@
   @description       : 
   @author            : Jayaprakash Thatiparthi
   @group             : 
-  @last modified on  : 07-15-2020
+  @last modified on  : 07-17-2020
   @last modified by  : Jayaprakash Thatiparthi
   Modifications Log 
   Ver   Date         Author                    Modification
@@ -22,7 +22,7 @@
                 <tr key={row}>
                     <template for:each={rows} for:item="number">
                         <td key={number} class="cellBackground">
-                            <lightning-button variant="base" label={value} title="Looks like a link" onclick={handleClick} class="slds-m-left_x-small square"></lightning-button>
+                            <lightning-button data-index="" variant="base" label={value} title="Looks like a link" onclick={handleClick} class="slds-m-left_x-small square"></lightning-button>
                         </td>
                     </template>
                 </tr>

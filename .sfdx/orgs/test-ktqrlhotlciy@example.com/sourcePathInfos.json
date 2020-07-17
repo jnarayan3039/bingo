@@ -199,18 +199,15 @@
     },
     "/Users/jnarayan/Desktop/Sample Gallery/bingo/force-app/main/default/labels/CustomLabels.labels-meta.xml": {
         "sourcePath": "/Users/jnarayan/Desktop/Sample Gallery/bingo/force-app/main/default/labels/CustomLabels.labels-meta.xml",
-        "deferContentHash": false,
-        "isWorkspace": false,
-        "isArtifactRoot": false,
         "state": "u",
         "package": "force-app",
         "isDirectory": false,
         "isMetadataFile": true,
         "metadataType": "CustomLabels",
-        "size": 824,
-        "modifiedTime": 1594932598837,
-        "changeTime": 1594932598837,
-        "contentHash": "8c6bee4262eb5cb35ba625e8fdad40284f432a1f"
+        "size": 1076,
+        "modifiedTime": 1595026356745,
+        "changeTime": 1595026356745,
+        "contentHash": "c2a8e6b2c28a8f2f7934c8b18bfa4e3003439223"
     },
     "/Users/jnarayan/Desktop/Sample Gallery/bingo/force-app/main/default/layouts": {
         "sourcePath": "/Users/jnarayan/Desktop/Sample Gallery/bingo/force-app/main/default/layouts",
@@ -278,9 +275,9 @@
         "isDirectory": false,
         "isMetadataFile": false,
         "size": 887,
-        "modifiedTime": 1594936539431,
-        "changeTime": 1594936539431,
-        "contentHash": "952e85e71788c9313ddefd0a55b60ba1f518bff0"
+        "modifiedTime": 1595024719941,
+        "changeTime": 1595024719941,
+        "contentHash": "a5af761cd30c9e4dd0a5da2ef393b3a6dd651d09"
     },
     "/Users/jnarayan/Desktop/Sample Gallery/bingo/force-app/main/default/lwc/bingoCard/bingoCard.js": {
         "sourcePath": "/Users/jnarayan/Desktop/Sample Gallery/bingo/force-app/main/default/lwc/bingoCard/bingoCard.js",
@@ -291,10 +288,10 @@
         "state": "u",
         "isDirectory": false,
         "isMetadataFile": false,
-        "size": 2184,
-        "modifiedTime": 1594941646124,
-        "changeTime": 1594941646124,
-        "contentHash": "b0316b32127e198629e327a0d05f735f6b381c06"
+        "size": 2218,
+        "modifiedTime": 1595026249021,
+        "changeTime": 1595026249021,
+        "contentHash": "054892960569e5c2c3711efb85550e560cd29f5e"
     },
     "/Users/jnarayan/Desktop/Sample Gallery/bingo/force-app/main/default/lwc/bingoCard/bingoCard.js-meta.xml": {
         "sourcePath": "/Users/jnarayan/Desktop/Sample Gallery/bingo/force-app/main/default/lwc/bingoCard/bingoCard.js-meta.xml",
@@ -342,33 +339,31 @@
     },
     "/Users/jnarayan/Desktop/Sample Gallery/bingo/force-app/main/default/lwc/card/card.html": {
         "sourcePath": "/Users/jnarayan/Desktop/Sample Gallery/bingo/force-app/main/default/lwc/card/card.html",
-        "deferContentHash": false,
+        "metadataType": "LightningComponentBundle",
         "isWorkspace": false,
-        "isArtifactRoot": false,
-        "state": "u",
         "package": "force-app",
+        "deferContentHash": true,
+        "state": "u",
         "isDirectory": false,
         "isMetadataFile": false,
-        "metadataType": "LightningComponentBundle",
-        "size": 1202,
-        "modifiedTime": 1594849670299,
-        "changeTime": 1594929539889,
-        "contentHash": "c7b12c98f97451292f2996e4457c09ff0946a3a3"
+        "size": 1216,
+        "modifiedTime": 1595004587155,
+        "changeTime": 1595004587155,
+        "contentHash": "a29b79828b4dadbb4bbdc7d410807fb8f311b6e1"
     },
     "/Users/jnarayan/Desktop/Sample Gallery/bingo/force-app/main/default/lwc/card/card.js": {
         "sourcePath": "/Users/jnarayan/Desktop/Sample Gallery/bingo/force-app/main/default/lwc/card/card.js",
-        "deferContentHash": false,
+        "metadataType": "LightningComponentBundle",
         "isWorkspace": false,
-        "isArtifactRoot": false,
-        "state": "u",
         "package": "force-app",
+        "deferContentHash": true,
+        "state": "u",
         "isDirectory": false,
         "isMetadataFile": false,
-        "metadataType": "LightningComponentBundle",
-        "size": 1346,
-        "modifiedTime": 1594913589214,
-        "changeTime": 1594929539891,
-        "contentHash": "6794284cbc14869c10396d12dcc5440131137570"
+        "size": 3077,
+        "modifiedTime": 1595023742679,
+        "changeTime": 1595023742679,
+        "contentHash": "fad636153c51c549765a8db281d59fab864bcf0d"
     },
     "/Users/jnarayan/Desktop/Sample Gallery/bingo/force-app/main/default/lwc/card/card.js-meta.xml": {
         "sourcePath": "/Users/jnarayan/Desktop/Sample Gallery/bingo/force-app/main/default/lwc/card/card.js-meta.xml",
