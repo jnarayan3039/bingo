@@ -2,3 +2,4 @@
 
 **/.eslintrc.json
 
+**/force-app/main/default/profiles/**
