@@ -75,4 +75,3 @@ getRandomInt(max) {
 }
 
 }
-
