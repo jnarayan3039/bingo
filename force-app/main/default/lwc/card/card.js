@@ -2,7 +2,7 @@
  * @description       : 
  * @author            : Jayaprakash Thatiparthi
  * @group             : 
- * @last modified on  : 07-17-2020
+ * @last modified on  : 07-21-2020
  * @last modified by  : Jayaprakash Thatiparthi
  * Modifications Log 
  * Ver   Date         Author                    Modification
@@ -68,12 +68,10 @@ checkColumnBingo(columnNumber, matchedValues){
 }
 
 handleRowMessage(index){
-    var rowNumber = index+1;
-    console.log('Row '+ rowNumber +'Housie');
-    
+    let rowNumber = eval(index) + 1;
     const event = new ShowToastEvent({
         title: 'Bingo Row Housie',
-        message: 'Row '+ rowNumber +' Housie',
+        message: 'Row '+ eval(rowNumber.valueOf()) +' Housie',
         variant: 'success',
         mode: 'dismissable'
     });
@@ -81,12 +79,10 @@ handleRowMessage(index){
     
 }
 handleColMessage(index){
-    colNumber = index+1;
-    console.log('Column '+ colNumber +'Housie');
-    
-    const event = new ShowToastEvent({
+    let colNumber = eval(index) + 1;
+     const event = new ShowToastEvent({
         title: 'Bingo Column Housie',
-        message: 'Column '+ colNumber +' Housie',
+        message: 'Column '+ eval(colNumber.valueOf()) +' Housie',
         variant: 'success',
         mode: 'dismissable'
     });

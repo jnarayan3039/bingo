@@ -1,0 +1,233 @@
+{
+    "serverMaxRevisionCounter": 784,
+    "sourceMembers": {
+        "CustomTab__Bingo": {
+            "serverRevisionCounter": 32,
+            "lastRetrievedFromServer": 32,
+            "memberType": "CustomTab",
+            "isNameObsolete": false
+        },
+        "CustomApplication__Bingo": {
+            "serverRevisionCounter": 21,
+            "lastRetrievedFromServer": 21,
+            "memberType": "CustomApplication",
+            "isNameObsolete": false
+        },
+        "ContentAsset__download": {
+            "serverRevisionCounter": 23,
+            "lastRetrievedFromServer": 23,
+            "memberType": "ContentAsset",
+            "isNameObsolete": false
+        },
+        "FlexiPage__Bingo": {
+            "serverRevisionCounter": 35,
+            "lastRetrievedFromServer": 35,
+            "memberType": "FlexiPage",
+            "isNameObsolete": false
+        },
+        "FlexiPage__Bingo_UtilityBar": {
+            "serverRevisionCounter": 19,
+            "lastRetrievedFromServer": 19,
+            "memberType": "FlexiPage",
+            "isNameObsolete": false
+        },
+        "PermissionSet__Bingo": {
+            "serverRevisionCounter": 34,
+            "lastRetrievedFromServer": 34,
+            "memberType": "PermissionSet",
+            "isNameObsolete": false
+        },
+        "LightningComponentBundle__bingoCard": {
+            "serverRevisionCounter": 735,
+            "lastRetrievedFromServer": 735,
+            "memberType": "LightningComponentBundle",
+            "isNameObsolete": false
+        },
+        "LightningComponentBundle__card": {
+            "serverRevisionCounter": 780,
+            "lastRetrievedFromServer": 780,
+            "memberType": "LightningComponentBundle",
+            "isNameObsolete": false
+        },
+        "LightningComponentBundle__stopWatch": {
+            "serverRevisionCounter": 14,
+            "lastRetrievedFromServer": 14,
+            "memberType": "LightningComponentBundle",
+            "isNameObsolete": false
+        },
+        "LightningComponentResource__bingoCard/bingoCard.html": {
+            "serverRevisionCounter": 736,
+            "lastRetrievedFromServer": 407,
+            "memberType": "LightningComponentResource",
+            "isNameObsolete": false
+        },
+        "LightningComponentResource__bingoCard/bingoCard.css": {
+            "serverRevisionCounter": 737,
+            "lastRetrievedFromServer": 408,
+            "memberType": "LightningComponentResource",
+            "isNameObsolete": false
+        },
+        "LightningComponentResource__bingoCard/bingoCard.js": {
+            "serverRevisionCounter": 738,
+            "lastRetrievedFromServer": 409,
+            "memberType": "LightningComponentResource",
+            "isNameObsolete": false
+        },
+        "LightningComponentResource__bingoCard/bingoCard.js-meta.xml": {
+            "serverRevisionCounter": 739,
+            "lastRetrievedFromServer": 410,
+            "memberType": "LightningComponentResource",
+            "isNameObsolete": false
+        },
+        "LightningComponentResource__stopWatch/stopWatch.html": {
+            "serverRevisionCounter": 15,
+            "lastRetrievedFromServer": 15,
+            "memberType": "LightningComponentResource",
+            "isNameObsolete": false
+        },
+        "LightningComponentResource__stopWatch/stopWatch.js": {
+            "serverRevisionCounter": 16,
+            "lastRetrievedFromServer": 16,
+            "memberType": "LightningComponentResource",
+            "isNameObsolete": false
+        },
+        "LightningComponentResource__stopWatch/stopWatch.js-meta.xml": {
+            "serverRevisionCounter": 17,
+            "lastRetrievedFromServer": 17,
+            "memberType": "LightningComponentResource",
+            "isNameObsolete": false
+        },
+        "LightningComponentResource__card/card.js-meta.xml": {
+            "serverRevisionCounter": 781,
+            "lastRetrievedFromServer": 323,
+            "memberType": "LightningComponentResource",
+            "isNameObsolete": false
+        },
+        "LightningComponentResource__card/card.html": {
+            "serverRevisionCounter": 782,
+            "lastRetrievedFromServer": 324,
+            "memberType": "LightningComponentResource",
+            "isNameObsolete": false
+        },
+        "LightningComponentResource__card/card.css": {
+            "serverRevisionCounter": 783,
+            "lastRetrievedFromServer": 325,
+            "memberType": "LightningComponentResource",
+            "isNameObsolete": false
+        },
+        "LightningComponentResource__card/card.js": {
+            "serverRevisionCounter": 784,
+            "lastRetrievedFromServer": 326,
+            "memberType": "LightningComponentResource",
+            "isNameObsolete": false
+        },
+        "CustomLabel__Bingo_Cards_Per_Game": {
+            "serverRevisionCounter": 417,
+            "lastRetrievedFromServer": 417,
+            "memberType": "CustomLabel",
+            "isNameObsolete": false
+        },
+        "CustomLabel__Bingo_Delay_Time": {
+            "serverRevisionCounter": 414,
+            "lastRetrievedFromServer": 414,
+            "memberType": "CustomLabel",
+            "isNameObsolete": false
+        },
+        "CustomLabel__Bingo_End_Range": {
+            "serverRevisionCounter": 416,
+            "lastRetrievedFromServer": 416,
+            "memberType": "CustomLabel",
+            "isNameObsolete": false
+        },
+        "Profile__Admin": {
+            "serverRevisionCounter": 624,
+            "lastRetrievedFromServer": 420,
+            "memberType": "Profile",
+            "isNameObsolete": false
+        },
+        "CustomLabel__Bingo_Delay_Time_Mismatch": {
+            "serverRevisionCounter": 413,
+            "lastRetrievedFromServer": 413,
+            "memberType": "CustomLabel",
+            "isNameObsolete": false
+        },
+        "ProfileSessionSetting__PT1_profileSessionSetting1595044188787": {
+            "serverRevisionCounter": 419,
+            "lastRetrievedFromServer": 419,
+            "memberType": "ProfileSessionSetting",
+            "isNameObsolete": false
+        },
+        "ProfilePasswordPolicy__PT1_profilePasswordPolicy1595044188441": {
+            "serverRevisionCounter": 418,
+            "lastRetrievedFromServer": 418,
+            "memberType": "ProfilePasswordPolicy",
+            "isNameObsolete": false
+        },
+        "Report__unfiled$public/flow_screen_prebuilt_report": {
+            "serverRevisionCounter": 533,
+            "lastRetrievedFromServer": null,
+            "memberType": "Report",
+            "isNameObsolete": false
+        },
+        "ReportType__screen_flows_prebuilt_crt": {
+            "serverRevisionCounter": 532,
+            "lastRetrievedFromServer": null,
+            "memberType": "ReportType",
+            "isNameObsolete": false
+        },
+        "CustomField__Bingo__c.Type__c": {
+            "serverRevisionCounter": 604,
+            "lastRetrievedFromServer": null,
+            "memberType": "CustomField",
+            "isNameObsolete": false
+        },
+        "CustomField__Bingo__c.Values__c": {
+            "serverRevisionCounter": 610,
+            "lastRetrievedFromServer": null,
+            "memberType": "CustomField",
+            "isNameObsolete": false
+        },
+        "Profile__Custom: Sales Profile": {
+            "serverRevisionCounter": 622,
+            "lastRetrievedFromServer": null,
+            "memberType": "Profile",
+            "isNameObsolete": false
+        },
+        "Profile__Custom: Marketing Profile": {
+            "serverRevisionCounter": 621,
+            "lastRetrievedFromServer": null,
+            "memberType": "Profile",
+            "isNameObsolete": false
+        },
+        "Profile__Custom: Support Profile": {
+            "serverRevisionCounter": 623,
+            "lastRetrievedFromServer": null,
+            "memberType": "Profile",
+            "isNameObsolete": false
+        },
+        "Layout__Bingo__c-Bingo Layout": {
+            "serverRevisionCounter": 611,
+            "lastRetrievedFromServer": null,
+            "memberType": "Layout",
+            "isNameObsolete": false
+        },
+        "CustomObject__Bingo__c": {
+            "serverRevisionCounter": 619,
+            "lastRetrievedFromServer": null,
+            "memberType": "CustomObject",
+            "isNameObsolete": false
+        },
+        "CustomTab__Bingo__c": {
+            "serverRevisionCounter": 620,
+            "lastRetrievedFromServer": null,
+            "memberType": "CustomTab",
+            "isNameObsolete": false
+        },
+        "FlexiPage__Bingo1": {
+            "serverRevisionCounter": 617,
+            "lastRetrievedFromServer": null,
+            "memberType": "FlexiPage",
+            "isNameObsolete": false
+        }
+    }
+}

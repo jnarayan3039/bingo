@@ -5,7 +5,7 @@
         <language>en_US</language>
         <protected>true</protected>
         <shortDescription>Bingo_Cards_Per_Game</shortDescription>
-        <value>35</value>
+        <value>25</value>
     </labels>
     <labels>
         <fullName>Bingo_Delay_Time</fullName>
@@ -26,6 +26,6 @@
         <language>en_US</language>
         <protected>true</protected>
         <shortDescription>Bingo_End_Range</shortDescription>
-        <value>100</value>
+        <value>25</value>
     </labels>
 </CustomLabels>
