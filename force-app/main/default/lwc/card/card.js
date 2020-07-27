@@ -2,7 +2,7 @@
  * @description       : 
  * @author            : Jayaprakash Thatiparthi
  * @group             : 
- * @last modified on  : 07-21-2020
+ * @last modified on  : 07-27-2020
  * @last modified by  : Jayaprakash Thatiparthi
  * Modifications Log 
  * Ver   Date         Author                    Modification
@@ -44,7 +44,6 @@ handleClick(event){
     if(this.currentcard === event.target.label){
         event.target.iconName = 'action:approval';
         var index = event.target.index;
-        console.log('Index:'+index);
         this.selectedValues.push(index);
         this.checkBingo(index);
     }else{
@@ -52,9 +51,8 @@ handleClick(event){
 }
 
 checkBingo(currentCell){
-    let rowNumber = currentCell[0];
-    let columnNumber = currentCell[1];
-    console.log('Selected Values:'+this.selectedValues);
+   let rowNumber = currentCell[0];
+   let columnNumber = currentCell[1];
    this.checkRowBingo(rowNumber, this.selectedValues).length===5 ? this.handleRowMessage(rowNumber):'';
    this.checkColumnBingo(columnNumber, this.selectedValues).length===5 ? this.handleColMessage(columnNumber):'';
 }
@@ -76,7 +74,6 @@ handleRowMessage(index){
         mode: 'dismissable'
     });
     this.dispatchEvent(event);
-    
 }
 handleColMessage(index){
     let colNumber = eval(index) + 1;
