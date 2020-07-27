@@ -2,7 +2,7 @@
  * @description       : 
  * @author            : Jayaprakash Thatiparthi
  * @group             : 
- * @last modified on  : 07-17-2020
+ * @last modified on  : 07-27-2020
  * @last modified by  : Jayaprakash Thatiparthi
  * Modifications Log 
  * Ver   Date         Author                    Modification
@@ -15,9 +15,8 @@ import delayMisMatch from '@salesforce/label/c.Bingo_Delay_Time_Mismatch';
 import cardscount from '@salesforce/label/c.Bingo_Cards_Per_Game';
 
 export default class BingoCard extends LightningElement {
-//maximum=25;
 
-displayedCards = [];
+ displayedCards = [];
  timeIntervalInstance;
  @track currentcard=0;
  @track cardsleft = 0;
@@ -34,33 +33,26 @@ fillData(){
 }
 
 startGame(){
+	this.displayedCards=[];
 	var count = cardscount;
 	var parentThis = this;
 	var milliSecondsToWait = delay;
 	parentThis.cardsleft = count;//this.label.cardscount;
-	parentThis.currentcard = this.getRandomInt(max);
+	parentThis.currentcard = this.getRandomInt(max,parentThis.displayedCards);
 	let buttons=this.template.querySelectorAll(".button");
 	for(var i=0;i<buttons.length;i++){
 		buttons[i].disabled=true;
 	}
 	this.timeIntervalInstance = setInterval(function(){
-		var displayedCard = parentThis.getRandomInt(max);
-		if(!(parentThis.displayedCards.includes(displayedCard))){
-			parentThis.currentcard = displayedCard;
-			parentThis.displayedCards.push(displayedCard);
-			parentThis.cardsleft--;
-			parentThis.footerLabel = `cards left: ${parentThis.cardsleft}`
-			count--;
-			parentThis.label=`${parentThis.currentcard}`;
-			milliSecondsToWait=delay;
-		}else{
-			milliSecondsToWait=delayMisMatch;
-		}
+		var displayedCard = parentThis.getRandomInt(max, parentThis.displayedCards);
+		parentThis.currentcard = displayedCard;
+		parentThis.displayedCards.push(displayedCard);
+		parentThis.cardsleft--;
+		parentThis.footerLabel = `cards left: ${parentThis.cardsleft}`
+		count--;
+		parentThis.label=`${parentThis.currentcard}`;
 		if(count===0){
 			clearInterval(parentThis.timeIntervalInstance);
-			console.log('Displayed Cards;'+parentThis.displayedCards);
-			//var eButtons=this.template.querySelectorAll(".button");
-			console.log("Buttons to Enable:"+buttons.length);
 			for(var j=0;j<buttons.length;j++){
 				buttons[j].disabled=false;
 			}
@@ -70,8 +62,13 @@ startGame(){
 }
 
 
-getRandomInt(max) {
-	return Math.floor(Math.random() * Math.floor(max));
+getRandomInt(max, displayedCards) {
+	let randomNumber = Math.floor(Math.random() * Math.floor(max));
+	if(!displayedCards.includes(randomNumber)){
+		return randomNumber;
+	}else{
+		return this.getRandomInt(max,displayedCards);
+	}
 }
 
 }
